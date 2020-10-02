@@ -1,0 +1,43 @@
+package moviedriver;
+import java.util.Scanner;
+
+public class moviedriver {
+	private void settitle(int ticketsSold) {
+	}
+
+	private void setRating(String rating) {
+	}
+
+	private void settitle(String name) {
+    }
+	
+	public static void main(String[] args) {
+	
+		String title;
+		String name, Rating;
+		String input;
+		int ticketsSold;
+		
+	Scanner keyboard = new Scanner(System.in);
+	Scanner scan = new Scanner(System.in);
+	moviedriver Movie = new moviedriver();
+	System.out.println("Enter the name of a movie");
+	name = scan.nextLine();
+	Movie.settitle(name);
+	System.out.println("Enter the rating of the movie");
+	Rating = scan.nextLine();
+	Movie.setRating(Rating);
+	System.out.println("Enter the number of tickets sold for this movie");
+	ticketsSold = scan.nextInt();
+	Movie.settitle(ticketsSold);
+	System.out.println((name)+(Rating)+(": TicketsSold=")+(ticketsSold));
+    System.out.println("Do you want to enter another? (Y or N)");
+    char ch='y';
+	while(ch=='y');
+	input = keyboard.nextLine();
+	System.exit(0);
+	
+
+ }
+
+}
